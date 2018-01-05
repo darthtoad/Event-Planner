@@ -21,6 +21,11 @@ public class EventPlanner {
                 this.price += cakeToAdd;
             }
         }
+        for (String item : entertainment) {
+            if (item.toUpperCase().equals("DJ") || item.toLowerCase().equals("magician")) {
+                this.price += 15;
+            }
+        }
     }
     public int getGuests() {
         return this.guests;
