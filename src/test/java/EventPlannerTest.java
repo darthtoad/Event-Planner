@@ -99,6 +99,6 @@ public class EventPlannerTest {
         food.add("Pizza");
         food.add("Cake");
         EventPlanner testEventPlanner = new EventPlanner(20, food, entertainment, beverages);
-        assertEquals(580, testEventPlanner.getPrice());
+        assertEquals(620, testEventPlanner.getPrice());
     }
 }

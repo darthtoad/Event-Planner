@@ -1,4 +1,6 @@
+
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class EventPlanner {
     private int guests;
@@ -28,6 +30,18 @@ public class EventPlanner {
         for (String item : entertainment) {
             if (item.toUpperCase().equals("DJ") || item.toLowerCase().equals("magician")) {
                 this.price += 150;
+            }
+        }
+        String [] alcoholic = {"whiskey"};
+        String [] nonAlcholic = {"coke"};
+        for (String item : beverages) {
+            if (Arrays.asList(alcoholic).contains(item.toLowerCase())) {
+                int numberToAdd = this.guests * 5;
+                this.price += numberToAdd;
+            }
+            if (Arrays.asList(nonAlcholic).contains(item.toLowerCase())) {
+                int numberToAdd = this.guests * 2;
+                this.price += numberToAdd;
             }
         }
 //        for (String coupon : coupons) {
