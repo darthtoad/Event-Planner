@@ -1,29 +1,29 @@
-# _Beep Boop_
+# _Event Planner_
 
-#### _A program that does magic to numbers_
+#### _A program for an event planning company that helps people book events_
 
 #### By _**Sam Gespass**_
 
 ## Description
 
-_This app takes a number, then gives you all numbers below it, replacing certain numbers with text._
+_This app allows a user to book an event with an event planning company. It takes information about the event, shows the subtotal, then applies any coupons they have._
 
 ## Specs
 
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| It can replace 0 with Beep! | 0 | "Beep!" |
-| It can replace 1 with Boop! | 1 | "Beep! Boop!" |
-| It can count to 2 | 2 | "Beep! Boop! 2" |
-| It can replace 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 3 | "Beep! Boop! 2. I'm sorry, Dave. I'm afraid I can't do that." |
-| It can replace any number containing 1 with Boop! | 31 | ... "Boop!" |
-| It can replace any number containing 0 with Beep! | 300 | ... "Beep!" |
-| It can replace any number divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." | 9 | ... "I'm sorry, Dave. I'm afraid I can't do that." |
+| It can create a new event | Event(args) | eventInstantiated = true |
+| It can save the number of guests in a new event | 10 | "Number of guests: 10" |
+| It can save the kinds of food being served | "Pizza, Cake" | "Food: Pizza, Cake" |
+| It can save the kinds of beverages being served | "Coke, Whiskey" | "Beverages: Coke, Whiskey" |
+| It can save the kinds of entertainment requested | "DJ, Magician" | "Entertainment: DJ, Magician" |
+| It can calculate the subtotal price of the event | "Submit" | "$150" |
+| It can apply coupon discounts | "Free DJ Service" | "$100" |
 
 ## Setup/Installation Requirements
 
 * Download and install a web browser
-* Click on the following [link](https://github.com/darthtoad/beep-boop) to use Beep Boop!
+* Click on the following [link](https://github.com/darthtoad/event-planner) to use the Event Planner!
 
 ## Known Bugs
 
