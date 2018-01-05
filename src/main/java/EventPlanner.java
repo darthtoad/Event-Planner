@@ -8,14 +8,14 @@ public class EventPlanner {
     private ArrayList<String> food;
     private ArrayList<String> entertainment;
     private ArrayList<String> beverages;
-    //private ArrayList<String> coupons;
-    public EventPlanner(int guests, ArrayList<String> food, ArrayList<String> entertainment, ArrayList<String> beverages/*, ArrayList<String> coupons*/) {
+    private ArrayList<String> coupons;
+    public EventPlanner(int guests, ArrayList<String> food, ArrayList<String> entertainment, ArrayList<String> beverages, ArrayList<String> coupons) {
         this.guests = guests;
         this.food = food;
         this.beverages = beverages;
         this.price = 0;
         this.entertainment = entertainment;
-        //this.coupons = coupons;
+        this.coupons = coupons;
         this.price += this.guests;
         for (String item : food) {
             if (item.toLowerCase().equals("pizza")) {
@@ -45,8 +45,11 @@ public class EventPlanner {
             }
         }
 //        for (String coupon : coupons) {
-//            if (coupon.toUpperCase().equals("DJ") && this.food.size() > 0 ) {
+//            if (coupon.toUpperCase().equals("DJ") && this.food.size() > 0 && this.beverages.size() > 0 && this.guests >= 150) {
 //                this.price -= 150;
+//            }
+//            if (coupon.toLowerCase().equals("$50 off")) {
+//                this.price -= 50;
 //            }
 //        }
     }
