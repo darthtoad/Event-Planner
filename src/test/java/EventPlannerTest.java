@@ -124,7 +124,7 @@ public class EventPlannerTest {
         food.add("Cake");
         ArrayList<String> coupons = new ArrayList<String>();
         coupons.add("DJ");
-        coupons.add("$50 off");
+        coupons.add("$50off");
         EventPlanner testEventPlanner = new EventPlanner(150, food, entertainment, beverages, coupons);
         assertEquals(2500, testEventPlanner.getPrice());
     }

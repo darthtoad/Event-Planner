@@ -3,13 +3,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class EventPlanner {
-    private int guests;
+    private Integer guests;
     private int price;
     private ArrayList<String> food;
     private ArrayList<String> entertainment;
     private ArrayList<String> beverages;
     private ArrayList<String> coupons;
-    public EventPlanner(int guests, ArrayList<String> food, ArrayList<String> entertainment, ArrayList<String> beverages, ArrayList<String> coupons) {
+    public EventPlanner(Integer guests, ArrayList<String> food, ArrayList<String> entertainment, ArrayList<String> beverages, ArrayList<String> coupons) {
         this.guests = guests;
         this.food = food;
         this.beverages = beverages;
@@ -48,7 +48,7 @@ public class EventPlanner {
             if (coupon.toUpperCase().equals("DJ") && this.food.size() > 0 && this.beverages.size() > 0 && this.guests >= 150) {
                 this.price -= 150;
             }
-            if (coupon.toLowerCase().equals("$50 off")) {
+            if (coupon.toLowerCase().equals("$50off")) {
                 this.price -= 50;
             }
         }
@@ -67,5 +67,8 @@ public class EventPlanner {
     }
     public ArrayList<String> getBeverages() {
         return this.beverages;
+    }
+    public ArrayList<String> getCoupons() {
+        return this.coupons;
     }
 }
