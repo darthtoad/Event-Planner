@@ -30,4 +30,12 @@ public class EventPlannerTest {
         EventPlanner testEventPlanner = new EventPlanner(20, food);
         assertEquals(food, testEventPlanner.getFood());
     }
+    @Test
+    public void getPrice_returnPriceAfterFoodEntered_100() throws Exception {
+        ArrayList<String> food = new ArrayList<String>();
+        food.add("Pizza");
+        food.add("Cake");
+        EventPlanner testEventPlanner = new EventPlanner(20, food);
+        assertEquals(100, testEventPlanner.getPrice());
+    }
 }
