@@ -5,11 +5,15 @@ public class EventPlanner {
     private int price;
     private ArrayList<String> food;
     private ArrayList<String> entertainment;
-    public EventPlanner(int guests, ArrayList<String> food, ArrayList<String> entertainment) {
+    private ArrayList<String> beverages;
+    //private ArrayList<String> coupons;
+    public EventPlanner(int guests, ArrayList<String> food, ArrayList<String> entertainment, ArrayList<String> beverages/*, ArrayList<String> coupons*/) {
         this.guests = guests;
         this.food = food;
+        this.beverages = beverages;
         this.price = 0;
         this.entertainment = entertainment;
+        //this.coupons = coupons;
         this.price += this.guests;
         for (String item : food) {
             if (item.toLowerCase().equals("pizza")) {
@@ -26,6 +30,11 @@ public class EventPlanner {
                 this.price += 150;
             }
         }
+//        for (String coupon : coupons) {
+//            if (coupon.toUpperCase().equals("DJ") && this.food.size() > 0 ) {
+//                this.price -= 150;
+//            }
+//        }
     }
     public int getGuests() {
         return this.guests;
@@ -38,5 +47,8 @@ public class EventPlanner {
     }
     public ArrayList<String> getEntertainment() {
         return this.entertainment;
+    }
+    public ArrayList<String> getBeverages() {
+        return null;
     }
 }
