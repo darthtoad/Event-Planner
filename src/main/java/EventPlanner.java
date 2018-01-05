@@ -49,6 +49,6 @@ public class EventPlanner {
         return this.entertainment;
     }
     public ArrayList<String> getBeverages() {
-        return null;
+        return this.beverages;
     }
 }
