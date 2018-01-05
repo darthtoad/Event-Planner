@@ -14,9 +14,13 @@ _This app allows a user to book an event with an event planning company. It take
 | :-------------     | :------------- | :------------- |
 | It can create a new event | Event(args) | eventInstantiated = true |
 | It can save the number of guests in a new event | 10 | "Number of guests: 10" |
+| It can change the price given the number of guests | getPrice() | $10 |
 | It can save the kinds of food being served | "Pizza, Cake" | "Food: Pizza, Cake" |
+| It can change the price given the amount and kinds of food being served | getPrice() | $30 |
 | It can save the kinds of beverages being served | "Coke, Whiskey" | "Beverages: Coke, Whiskey" |
+| It can change the price given the kinds of beverages being served | getPrice() | $50 |
 | It can save the kinds of entertainment requested | "DJ, Magician" | "Entertainment: DJ, Magician" |
+| It can change the price given the kinds of entertainment requested | getPrice() | $150 |
 | It can calculate the subtotal price of the event | "Submit" | "$150" |
 | It can apply coupon discounts | "Free DJ Service" | "$100" |
 

@@ -13,4 +13,9 @@ public class EventPlannerTest {
         EventPlanner testEventPlanner = new EventPlanner(20);
         assertEquals(20, testEventPlanner.getGuests());
     }
+    @Test
+    public void getPrice_returnPriceAfterGuestsEntered_20() throws Exception {
+        EventPlanner testEventPlanner = new EventPlanner(20);
+        assertEquals(20, testEventPlanner.getPrice());
+    }
 }
