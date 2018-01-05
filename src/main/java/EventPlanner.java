@@ -9,6 +9,7 @@ public class EventPlanner {
         this.guests = guests;
         this.food = food;
         this.price = 0;
+        this.entertainment = entertainment;
         this.price += this.guests;
         for (String item : food) {
             if (item.toLowerCase().equals("pizza")) {
@@ -31,6 +32,6 @@ public class EventPlanner {
         return this.food;
     }
     public ArrayList<String> getEntertainment() {
-        return this.food;
+        return this.entertainment;
     }
 }
