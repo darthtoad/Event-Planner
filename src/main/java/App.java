@@ -9,14 +9,16 @@ public class App {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Welcome to Awesome Events! How many guests will you have for your party");
             String guests = bufferedReader.readLine();
-            System.out.println("Great! What kinds of food will you have?");
+            System.out.println("Great! What kinds of food will you have? Our choices are: \"breakfast\", \"tacos\", \"pizza\", \"cake\", and \"sushi\".");
             String food = bufferedReader.readLine();
-            System.out.println("Great! What kinds of beverages will you have?");
+            System.out.println("Great! What kinds of beverages will you have? Our choices are: \"coke\", \"juice\", \"whiskey\", \"rum\", \"tequila\", \"beer\", and \"vodka\".");
             String beverages = bufferedReader.readLine();
-            System.out.println("Great! What kinds of entertainment would you like?");
+            System.out.println("Great! What kinds of entertainment would you like? Our choices are: \"DJ\", \"band\", and \"magician\".");
             String entertainment = bufferedReader.readLine();
-            System.out.println("Great! Do you have any coupons?");
+            System.out.println("Great! Do you have any coupons? Enter \"$50off\" for the $50 off coupon , \"band\" for the band coupon, or \"DJ\" for the DJ coupon. If you do not bring your coupon, you will be charged twice the price of the coupon.");
             String coupons = bufferedReader.readLine();
+
+
             Integer guestsInteger = Integer.parseInt(guests);
             ArrayList<String> foodList = new ArrayList<String>();
             String[] foodArr = food.split(" ");
@@ -40,7 +42,7 @@ public class App {
             }
             EventPlanner eventPlanner = new EventPlanner(guestsInteger, foodList, entertainmentList, beveragesList, couponList);
             int price = eventPlanner.getPrice();
-            System.out.println(String.format("Great, your price is %d. We hope to see you soon!", price));
+            System.out.println(String.format("Great, your price is $%d. We hope to see you soon!", price));
         } catch (IOException e) {
             e.printStackTrace();
         }
