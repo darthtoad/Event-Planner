@@ -4,6 +4,6 @@ public class EventPlanner {
         this.guests = guests;
     }
     public int getGuests() {
-        return 0;
+        return this.guests;
     }
 }
