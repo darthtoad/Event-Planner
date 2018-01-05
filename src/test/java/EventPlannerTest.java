@@ -36,6 +36,6 @@ public class EventPlannerTest {
         food.add("Pizza");
         food.add("Cake");
         EventPlanner testEventPlanner = new EventPlanner(20, food);
-        assertEquals(100, testEventPlanner.getPrice());
+        assertEquals(180, testEventPlanner.getPrice());
     }
 }
