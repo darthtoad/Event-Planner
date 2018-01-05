@@ -4,7 +4,8 @@ public class EventPlanner {
     private int guests;
     private int price;
     private ArrayList<String> food;
-    public EventPlanner(int guests, ArrayList<String> food) {
+    private ArrayList<String> entertainment;
+    public EventPlanner(int guests, ArrayList<String> food, ArrayList<String> entertainment) {
         this.guests = guests;
         this.food = food;
         this.price = 0;
@@ -27,6 +28,9 @@ public class EventPlanner {
         return this.price;
     }
     public ArrayList<String> getFood() {
+        return this.food;
+    }
+    public ArrayList<String> getEntertainment() {
         return this.food;
     }
 }

@@ -21,8 +21,7 @@ _This app allows a user to book an event with an event planning company. It take
 | It can change the price given the kinds of beverages being served | getPrice() | $50 |
 | It can save the kinds of entertainment requested | "DJ, Magician" | "Entertainment: DJ, Magician" |
 | It can change the price given the kinds of entertainment requested | getPrice() | $150 |
-| It can calculate the subtotal price of the event | "Submit" | "$150" |
-| It can apply coupon discounts | "Free DJ Service" | "$100" |
+| It can apply coupon discounts and display final total | "Free DJ Service" | "$100" |
 
 ## Setup/Installation Requirements
 
