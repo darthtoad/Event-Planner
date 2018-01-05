@@ -3,12 +3,14 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class EventPlanner {
+
     private Integer guests;
     private int price;
     private ArrayList<String> food;
     private ArrayList<String> entertainment;
     private ArrayList<String> beverages;
     private ArrayList<String> coupons;
+
     public EventPlanner(Integer guests, ArrayList<String> food, ArrayList<String> entertainment, ArrayList<String> beverages, ArrayList<String> coupons) {
         this.guests = guests;
         this.food = food;
@@ -17,6 +19,7 @@ public class EventPlanner {
         this.entertainment = entertainment;
         this.coupons = coupons;
         this.price += this.guests;
+
         for (String item : food) {
             if (item.toLowerCase().equals("pizza") || item.toLowerCase().equals("breakfast")) {
                 int pizzaToAdd = this.guests * 5;
@@ -33,6 +36,9 @@ public class EventPlanner {
             if (item.toLowerCase().equals("tacos")) {
                 int tacosToAdd = this.guests * 4;
                 this.price += tacosToAdd;
+            }
+            if (item.toLowerCase().equals("snacks")) {
+                this.price += this.guests;
             }
         }
         for (String item : entertainment) {

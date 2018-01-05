@@ -25,8 +25,9 @@ _This app allows a user to book an event with an event planning company. It take
 
 ## Setup/Installation Requirements
 
-* Download and install a web browser
-* Click on the following [link](https://github.com/darthtoad/event-planner) to use the Event Planner!
+* Click on the following [link](https://github.com/darthtoad/event-planner) to download the Event Planner
+* Open Event-Planner in IntelliJ or another IDE
+* Run App.java in the IDE
 
 ## Known Bugs
 

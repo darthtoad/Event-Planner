@@ -9,15 +9,14 @@ public class App {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("Welcome to Awesome Events! How many guests will you have for your party");
             String guests = bufferedReader.readLine();
-            System.out.println("Great! What kinds of food will you have? Our choices are: \"breakfast\", \"tacos\", \"pizza\", \"cake\", and \"sushi\".");
+            System.out.println("Great! What kinds of food will you have? Our choices are: \"snacks\", \"breakfast\", \"tacos\", \"pizza\", \"cake\", and \"sushi\". Please only write text and spaces, no commas.");
             String food = bufferedReader.readLine();
-            System.out.println("Great! What kinds of beverages will you have? Our choices are: \"coke\", \"juice\", \"whiskey\", \"rum\", \"tequila\", \"beer\", and \"vodka\".");
+            System.out.println("Great! What kinds of beverages will you have? Our choices are: \"coke\", \"juice\", \"whiskey\", \"rum\", \"tequila\", \"beer\", and \"vodka\". Please only write text and spaces, no commas.");
             String beverages = bufferedReader.readLine();
-            System.out.println("Great! What kinds of entertainment would you like? Our choices are: \"DJ\", \"band\", and \"magician\".");
+            System.out.println("Great! What kinds of entertainment would you like? Our choices are: \"DJ\", \"band\", and \"magician\". Please only write text and spaces, no commas.");
             String entertainment = bufferedReader.readLine();
-            System.out.println("Great! Do you have any coupons? Enter \"$50off\" for the $50 off coupon , \"band\" for the band coupon, or \"DJ\" for the DJ coupon. If you do not bring your coupon, you will be charged twice the price of the coupon.");
+            System.out.println("Great! Do you have any coupons? Enter \"$50off\" for the $50 off coupon , \"band\" for the band coupon, or \"DJ\" for the DJ coupon. Please only write text and spaces, no commas. If you do not bring your coupon, you will be charged twice the price of the coupon.");
             String coupons = bufferedReader.readLine();
-
 
             Integer guestsInteger = Integer.parseInt(guests);
             ArrayList<String> foodList = new ArrayList<String>();
