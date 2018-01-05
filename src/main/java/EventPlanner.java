@@ -44,14 +44,14 @@ public class EventPlanner {
                 this.price += numberToAdd;
             }
         }
-//        for (String coupon : coupons) {
-//            if (coupon.toUpperCase().equals("DJ") && this.food.size() > 0 && this.beverages.size() > 0 && this.guests >= 150) {
-//                this.price -= 150;
-//            }
-//            if (coupon.toLowerCase().equals("$50 off")) {
-//                this.price -= 50;
-//            }
-//        }
+        for (String coupon : coupons) {
+            if (coupon.toUpperCase().equals("DJ") && this.food.size() > 0 && this.beverages.size() > 0 && this.guests >= 150) {
+                this.price -= 150;
+            }
+            if (coupon.toLowerCase().equals("$50 off")) {
+                this.price -= 50;
+            }
+        }
     }
     public int getGuests() {
         return this.guests;
