@@ -23,7 +23,7 @@ public class EventPlanner {
         }
         for (String item : entertainment) {
             if (item.toUpperCase().equals("DJ") || item.toLowerCase().equals("magician")) {
-                this.price += 15;
+                this.price += 150;
             }
         }
     }
