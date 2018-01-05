@@ -86,4 +86,19 @@ public class EventPlannerTest {
         EventPlanner testEventPlanner = new EventPlanner(20, food, entertainment, beverages);
         assertEquals(beverages, testEventPlanner.getBeverages());
     }
+
+    @Test
+    public void getPrice_returnPriceAfterBeveragesEntered_int() throws Exception {
+        ArrayList<String> beverages = new ArrayList<String>();
+        beverages.add("Coke");
+        beverages.add("Whiskey");
+        ArrayList<String> entertainment = new ArrayList<String>();
+        entertainment.add("DJ");
+        entertainment.add("Magician");
+        ArrayList<String> food = new ArrayList<String>();
+        food.add("Pizza");
+        food.add("Cake");
+        EventPlanner testEventPlanner = new EventPlanner(20, food, entertainment, beverages);
+        assertEquals(580, testEventPlanner.getPrice());
+    }
 }
