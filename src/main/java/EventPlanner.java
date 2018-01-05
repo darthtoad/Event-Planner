@@ -18,6 +18,6 @@ public class EventPlanner {
         return this.price;
     }
     public ArrayList<String> getFood() {
-        return null;
+        return this.food;
     }
 }
