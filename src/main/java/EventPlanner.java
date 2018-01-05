@@ -11,6 +11,6 @@ public class EventPlanner {
         return this.guests;
     }
     public int getPrice() {
-        return 0;
+        return this.price;
     }
 }
